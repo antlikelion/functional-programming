@@ -1,6 +1,5 @@
 const curry = require("./curry");
-const L_map = require("./L_map");
-const naive_L_range = require("./naive_L_range");
+const L = require("./L");
 const pipe = require("./pipe");
 const takeAll = require("./takeAll");
 
@@ -17,7 +16,7 @@ const takeAll = require("./takeAll");
 // );
 
 // 3.
-const map = curry(pipe(L_map, takeAll));
+const map = curry(pipe(L.map, takeAll));
 
 // const map = curry((f, iterator) => {
 //   const result = [];

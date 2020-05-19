@@ -3,13 +3,11 @@ const L_filter = require("./L_filter");
 const go = require("./go");
 const pipe = require("./pipe");
 const takeAll = require("./takeAll");
-const naive_L_range = require("./naive_L_range");
 
 // L.filter로 만드는 filter함수
 
 const filter = curry(pipe(L_filter, takeAll));
 
-filter((n) => n < 3, naive_L_range(5));
 // const filter = curry((f, iterator) => {
 //   const result = [];
 

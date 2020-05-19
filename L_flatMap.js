@@ -1,12 +1,13 @@
 const L_flatten = require("./L_flatten");
-const L_map = require("./L_map");
+const L = require("./L");
+// const L_map = require("./L_map");
 const pipe = require("./pipe");
 const curry = require("./curry");
 const go = require("./go");
 const map = require("./map");
 const takeAll = require("./takeAll");
 const L = {};
-L.flatMap = curry(pipe(L_map, L_flatten));
+L.flatMap = curry(pipe(L.map, L_flatten));
 
 module.exports = L.flatMap;
 

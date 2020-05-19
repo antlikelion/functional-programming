@@ -1,4 +1,4 @@
-const naive_L_range = require("./naive_L_range");
+const L = require("./L");
 const range = require("./range");
 const curry = require("./curry");
 const go = require("./go");
@@ -69,7 +69,7 @@ module.exports = take;
 // // 이 코드의 경우 고작 5개를 뽑기 위해 길이 100의 배열을 만들어버린다.
 // console.timeEnd("");
 // console.time("good");
-// go(naive_L_range(Infinity), take(5), console.log);
+// go(L.range(Infinity), take(5), console.log);
 // // 이 코드는 지연성을 갖기에 딱 5개만 뽑는다.
 // // 또한 위처럼 무한대를 집어넣어도 어차피 5개의 값만을 평가한다
 // console.timeEnd("good");

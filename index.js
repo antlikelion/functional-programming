@@ -4,7 +4,6 @@ const reduce = require("./reduce");
 const go = require("./go");
 const pipe = require("./pipe");
 const curry = require("./curry");
-const naive_L_range = require("./naive_L_range");
 const range = require("./range");
 const take = require("./take");
 const test = require("./test");
@@ -17,7 +16,6 @@ module.exports = {
   go,
   pipe,
   curry,
-  naive_L_range,
   range,
   take,
   test,
