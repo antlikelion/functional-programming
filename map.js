@@ -7,7 +7,7 @@ const takeAll = require("./takeAll");
 
 // 1.
 // const map = curry((f, iterable) =>
-//   go(iterable, L_map(f), take(Infinity), console.log)
+//   go(iterable, L.map(f), take(Infinity), console.log)
 // );
 
 // 2.
