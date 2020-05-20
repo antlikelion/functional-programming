@@ -1,12 +1,11 @@
 const curry = require("./curry");
-const L_filter = require("./L_filter");
-const go = require("./go");
+const L = require("./L");
 const pipe = require("./pipe");
 const takeAll = require("./takeAll");
 
 // L.filter로 만드는 filter함수
 
-const filter = curry(pipe(L_filter, takeAll));
+const filter = curry(pipe(L.filter, takeAll));
 
 // const filter = curry((f, iterator) => {
 //   const result = [];

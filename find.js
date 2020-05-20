@@ -1,10 +1,9 @@
 const take = require("./take");
-const L_filter = require("./L_filter");
+const L = require("./L");
 const curry = require("./curry");
 const pipe = require("./pipe");
-const go = require("./go");
 
-const find = curry(pipe(L_filter, take(1), ([result]) => result));
+const find = curry(pipe(L.filter, take(1), ([result]) => result));
 
 module.exports = find;
 
@@ -19,4 +18,4 @@ module.exports = find;
 //   { age: 37 },
 // ];
 
-// find((user) => user.age < 30)(users);
+// const result = find((user) => user.age < 30)(users);

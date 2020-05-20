@@ -7,7 +7,6 @@ const curry = require("./curry");
 const range = require("./range");
 const take = require("./take");
 const test = require("./test");
-const L_filter = require("./L_filter");
 
 module.exports = {
   map,
@@ -19,5 +18,4 @@ module.exports = {
   range,
   take,
   test,
-  L_filter,
 };

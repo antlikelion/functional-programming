@@ -1,7 +1,4 @@
-const L = require("./L");
-const range = require("./range");
 const curry = require("./curry");
-const go = require("./go");
 
 const nop = require("./nop");
 
