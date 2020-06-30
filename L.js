@@ -89,6 +89,12 @@ L.flatten = function* (iterable) {
 
 L.flatMap = curry(pipe(L.map, L.flatten));
 
+L.keys = function* (obj) {
+  for (const key in obj) yield key;
+};
+L.values = function* (obj) {
+  for (const key in obj) yield obj[key];
+};
 L.entries = function* (obj) {
   for (const key in obj) yield [key, obj[key]];
 };
